@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML 5 </title>
+</head>
+<body>
+<h1>Imagens dinamicas</h1>
+<p>Tente abrir essa imagem em varios dispositivos, ou diminua o tamanho navegador, dps aumente.</p>
+<p>teste de Responsividade</p>
+<picture>
+    <source media="(min-width: 850px)" srcset="imagens/img900x900.png" type="image/png">
+    <source media="(min-width: 550px)" srcset="imagens\img-600x600.png" type="image/png">
+    <img src="imagens/img-300x300.png" alt="Foto P">
+</picture>
+    <h1>Reprodutor de áudio</h1>
+    <p>Incluindo um audio, e um Reprodutor</p>
+    <!--audio src="Audios/bensound-creativeminds.mp3"controls autoplay></audio!-->
+    <!---Mp3 wav e ogg ( adicionar formatos.)-->
+    <audio preload="metadata" controls autoplay>
+        <source src="Audios/bensound-creativeminds.mp3" type="audio/mpeg">
+        <p><a href="Audios/bensound-creativeminds.mp3">Clique aqui para baixar o audio - seu navegador não possui recursos para utilizar este audio
+        </a></p>
+    </audio>
+</body>
+</html>

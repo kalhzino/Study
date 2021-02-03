@@ -1,0 +1,28 @@
+.minhafoto{
+    border-radius: 50%;
+    width: 200px;
+    transition: all 0.5s;
+}
+.minhafoto:hover{
+    border-radius: 0%;
+    transition: all 0.5s;
+}
+.linkedin{
+    border-radius: 50%;
+    width: 20px;
+    
+}
+.instagram{
+    border-radius: 50%;
+    width: 25px;
+}
+.twitter{
+    border-radius: 50%;
+    width: 20px;
+    
+}
+.github{
+    border-radius: 50%;
+    width: 20px;
+   
+}

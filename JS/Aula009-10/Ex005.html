@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <h1>iniciando estudos de DOM - Document object model </h1>
+    <h1>Aqui vai o resultado.</h1>
+    <div class="classe1" >clique em mim</div>
+    <br>
+    <script>
+        window.document.write(window.navigator.appName);
+        var d = window.document.querySelector("div.classe1");
+        d.addEventListener('click', clicar)
+        d.addEventListener('mouseenter', entrou)
+        d.addEventListener('mouseout', saiu)
+        d.style.background = 'blue'
+        function clicar(){
+            d.style.background = 'green'
+            d.innerHTML = '<strong> clicou! </strong>'
+            
+        };
+        function entrou(){
+            d.style.background = 'black'
+        }
+        function saiu(){
+            d.style.background = 'blue'
+        }
+        
+    </script>
+</body>
+</html>

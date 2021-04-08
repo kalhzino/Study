@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(42, 195, 255);
+    
+}
+section{
+    background-color: azure;
+    border-radius: 3%;
+    width: 400px;
+    height: 300px;
+    align-self: center;
+}
+header{
+    font-size: 18px;
+}
+footer{
+    font-size: 11;
+    font-style: italic;
+}
+input{
+   margin-left: 10px;
+   margin-top: 1%;
+}
+p{
+    margin-left: 10px;
+    margin-top: 3%;
+}

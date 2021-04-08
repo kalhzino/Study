@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(114, 181, 245);
+    font:arial;
+    font-size: 16px;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: azure;
+    border-radius: 10px;;
+    padding: 13px;
+    width: 200px;
+    margin: auto;   
+    box-shadow: rgb(95, 93, 93) 5px 5px 10px;
+}
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}
+#img{
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-position: center;
+}
+div{
+    text-align: center;
+    padding: 5px;
+}
+#titulo{
+    font-size: 30px;
+}

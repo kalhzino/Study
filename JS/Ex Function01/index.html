@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Manipulando Numerinhos.</h1>
+    </header>
+    <section>
+        <div>
+            <p>Numeros de 1 a 100<input type="number" id="txtnum"></p>
+            <p><input type="button" value="Adicionar" onclick="adicionarVetor()"></p>
+        </div>
+        <div>
+            <select name="numeros" id="slnum" size="5"></select>
+            <input type="button" value="Cacular" onclick="chamada()">
+        </div>
+        <div id="res">
+            <p id="SomaElementos"></p>
+            <p id="SomaArray"></p>
+            <p id="MediaCalc"></p>
+            <p id="MaiorNum"></p>
+            <p id="MenorNum"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Keyo.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

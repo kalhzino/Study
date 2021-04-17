@@ -1,6 +1,6 @@
 var tot = [];
 
-function adicionarVetor(){
+adicionarVetor = () => {
     let n = document.querySelector("input#txtnum");
     let select = document.querySelector("#slnum");
     let item = document.createElement("option");
@@ -15,7 +15,7 @@ function adicionarVetor(){
     document.querySelector("#txtnum").focus();
     return{ tot : tot,
     type: Number,}
-}
+};
 
 function SomatoriaElementos(){
    QtdElementos = tot.length;
@@ -25,15 +25,15 @@ function SomatoriaElementos(){
 }
 function SomaArray(){
     soma = 0;
-    for(let i in tot){
-        soma += tot[i]
+    for(let elementoNoArray in tot){ //tot é meu array
+        soma += tot[elementoNoArray]
     }
     let p = document.querySelector("p#SomaArray")
     p.innerHTML = `total da somatória dos elementos: ${soma}`
     return soma;
     
 }
-function MediaCalc(){
+function MediaCalc (){
     QtdElementos = SomatoriaElementos();
     Soma = SomaArray();
     media = soma / QtdElementos;
@@ -62,11 +62,11 @@ function MenorNumero(){
     document.querySelector("p#MenorNum").innerHTML = `o menor é: ${menor}`
 }
 
-function chamada(){
+chamada = () => {
     SomatoriaElementos()
     SomaArray()
     MediaCalc()
     MaiorNumero()
     MenorNumero()
-}
+};
 

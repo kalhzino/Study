@@ -39,17 +39,20 @@ class LoginPage extends Page {
      * e.g. to login using username and password '//*[@id="iFrameResizer0"]'
      */
     async input_CardNum(cardNum){
-        const iframe = $('//*[@id="iFrameResizer0"]')
+        const iframe = $("iFrameResizer0")
         // const Text = $('//*[@id="root"]/form/div[1]/div[1]/label/span')
         // console.log(Text.getText());
         await browser.switchToFrame((iframe))
+        browser.pause(5000);
         await (await this.input_CardNumber).setValue(cardNum)
+        browser.pause(5000);        
     }
     async clickBtnNewCard(){
         await(await this.btnAddCardsNewCard).click();
     }
     async awaitForModal(){
-        browser.waitUntil(() => this.btnAbrirModalMyAccount.isExisting())
+        //await browser.waitUntil(() => this.btnAbrirModalMyAccount.isExisting())
+        return true;
     }
     async openCardMyAccount(){
         await(await this.btnAddCards).click();

@@ -1,0 +1,6 @@
+button {
+  padding: 0.25rem;
+  border: 0.25px solid;
+  margin: 0.25px;
+  display: grid;
+}

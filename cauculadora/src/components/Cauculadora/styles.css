@@ -1,0 +1,13 @@
+.button-Container {
+  display: grid;
+}
+.visor {
+  border: 2px;
+}
+.displayVisor {
+  color: gray;
+  padding: 5rem;
+  border-style: solid;
+  border: 2px;
+  margin: 1rem;
+}
